@@ -33,10 +33,8 @@ $sql = "INSERT INTO `clinica_transforme_seu_sorriso`.`funcionarios`
 (`nome`, `sexo`, `data_nascimento`, `cpf`, `senha`, `estado`, `cidade`, 
 `bairro`, `rua`, `numero_residencia`, `cep`, `telefone`, `email`, `cargo`, `nivel`) 
 VALUES 
-('João da Silva', 'Masculino', '1990-05-15', '123.456.789-00', 'senha123', 
-'São Paulo', 'São Paulo', 'Centro', 'Rua das Flores', '123', '01234-567', 
-'(11) 98765-4321', 'joao.silva@example.com', 'Dentista', 'Nível 1');
-";
+('$nome', '$sexo', '$data', '$cpf', '$senha','$estado', '$cidade', '$bairro', '$rua', '$numre', '$cep', 
+'$telefone', '$email', '$cargo', '$acesso');";
 
 // Executa a query diretamente
 if (!$conexao->query($sql)) {
